@@ -1,0 +1,52 @@
+{
+  "name": "@kota-dev/tiny-date-utils",
+  "version": "1.0.0",
+  "description": "Tiny safe date formatters (YYYY-MM-DD / YYYY/MM/DD).",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" \"tests/**/*.ts\"",
+    "format": "prettier -w ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "CC0-1.0",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "@types/node": "^24.3.1",
+    "@vitest/coverage-v8": "^3.2.4",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.42.0",
+    "vitest": "^3.2.4"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": "false",
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khosokawa0716/tiny-date-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khosokawa0716/tiny-date-utils/issues"
+  },
+  "homepage": "https://github.com/khosokawa0716/tiny-date-utils#readme"
+}
