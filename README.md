@@ -6,12 +6,12 @@
 
 ## 対応環境
 - Node.js 20+
-- TypeScript 5+ / ESM & CommonJS どちらでも利用可
+- TypeScript 5+ / ESM
 
 ## インストール
 
 ```bash
-npm i tiny-date-utils
+npm i @kota-dev/tiny-date-utils
 # （npm に公開後に実行してください）
 ```
 
@@ -19,7 +19,7 @@ npm i tiny-date-utils
 
 ```ts
 // TypeScript / ESM
-import { formatDateYYYYMMDD, formatDateYYYYslashMMslashDD } from 'tiny-date-utils';
+import { formatDateYYYYMMDD, formatDateYYYYslashMMslashDD } from '@kota-dev/tiny-date-utils';
 
 const d = new Date('2025-09-06T10:30:00Z');
 
@@ -81,5 +81,4 @@ npm run coverage
 
 ## ライセンス
 
-CC0-1.0
-完全に自由（クレジット不要）でOK
+CC0-1.0 — see LICENSE

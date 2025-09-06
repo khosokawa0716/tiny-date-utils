@@ -11,7 +11,7 @@
     "lint": "eslint \"src/**/*.{ts,tsx}\" \"tests/**/*.ts\"",
     "format": "prettier -w ."
   },
-  "keywords": [],
+  "keywords": "[\"date\",\"format\",\"YYYY-MM-DD\",\"YYYY/MM/DD\",\"tiny\",\"safe\",\"typescript\",\"esm\"]",
   "author": "",
   "license": "CC0-1.0",
   "type": "module",
