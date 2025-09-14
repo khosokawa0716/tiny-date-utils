@@ -20,7 +20,7 @@ export default [
   {
     files: ['**/*.ts'],
     rules: {
-      'no-console': 'error'
+      'no-console': 'error',
       // 例）明示anyを許容したいなら
       // '@typescript-eslint/no-explicit-any': 'off',
     },
