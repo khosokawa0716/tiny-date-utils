@@ -1,0 +1,10 @@
+# まず全て無視
+*
+
+# ただし配布物は許可
+!dist/
+!dist/index.js
+!dist/index.d.ts
+!README.md
+!LICENSE
+!package.json

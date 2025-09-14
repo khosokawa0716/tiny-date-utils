@@ -4,14 +4,25 @@
   "description": "Tiny safe date formatters (YYYY-MM-DD / YYYY/MM/DD).",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.build.json",
     "test": "vitest run",
     "test:watch": "vitest",
     "coverage": "vitest run --coverage",
     "lint": "eslint \"src/**/*.{ts,tsx}\" \"tests/**/*.ts\"",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm run lint && npm test && npm run build"
   },
-  "keywords": "[\"date\",\"format\",\"YYYY-MM-DD\",\"YYYY/MM/DD\",\"tiny\",\"safe\",\"typescript\",\"esm\"]",
+  "keywords": [
+    "date",
+    "format",
+    "YYYY-MM-DD",
+    "YYYY/MM/DD",
+    "tiny",
+    "safe",
+    "typescript",
+    "esm"
+  ],
   "author": "",
   "license": "CC0-1.0",
   "type": "module",
@@ -33,7 +44,7 @@
     }
   },
   "files": [
-    "dist",
+    "dist/",
     "README.md",
     "LICENSE"
   ],
@@ -48,5 +59,6 @@
   "bugs": {
     "url": "https://github.com/khosokawa0716/tiny-date-utils/issues"
   },
-  "homepage": "https://github.com/khosokawa0716/tiny-date-utils#readme"
+  "homepage": "https://github.com/khosokawa0716/tiny-date-utils#readme",
+  "types": "dist/index.d.ts"
 }
