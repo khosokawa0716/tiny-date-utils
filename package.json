@@ -1,6 +1,6 @@
 {
   "name": "@kota-dev/tiny-date-utils",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Tiny safe date formatters (YYYY-MM-DD / YYYY/MM/DD).",
   "main": "dist/index.js",
   "scripts": {
